@@ -11,7 +11,7 @@ name='Имя'
 @app.route("/")
 def home():
     data=readTable()
-    return render_template('index.html')
+    return render_template('python.html')
 
 @app.route("/arduino")
 def arduino():

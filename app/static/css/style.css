@@ -8,7 +8,11 @@ h1 {
     color: #e4ac13;
     text-align: center;
     padding: 10px;
+    -webkit-box-shadow: 70px -17px 100px 60px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 70px -17px 100px 60px rgba(34, 60, 80, 0.2);
+    box-shadow: 70px -17px 100px 60px rgba(34, 60, 80, 0.2)
 }
+
 footer{
     display: block;
     height: 100px;
@@ -26,4 +30,12 @@ footer{
     color: #162a2b;
     font-size: 15px;
     font-weight: bold;
+}
+
+.badge.bg-warning.title_video {
+    background: #f0ef3d;
+}
+.img_insert{
+    display:block;
+    width: 100%;
 }

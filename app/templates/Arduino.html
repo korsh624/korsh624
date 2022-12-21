@@ -5,12 +5,29 @@ Arduino
 {% block body %}
 <div class="container mt-5">
     <div class="row">
-        <div class="col-6">
+        <div class="col-8">
+            <div><span class="badge bg-warning title_video mt-2 mb-2"><h5>Начало курса</h5></span></div>
+            <iframe width="720" height="480" src="https://www.youtube.com/embed/XMv83V0Av50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-4">
+            
+            <img class="img_insert" src="{{ url_for('static',filename='images/design.jpg') }}">
+            <div class="design_info">This picture and website design was made by a neural network</div>
+            <div class="design_info">Эту картинку и дизайн сайта придумала нейросеть</div>
             
         </div>
-        <div class="col-6">
-            <img src="{{ url_for('static',filename='images/design.jpg') }}">
+    </div>
+     <div class="row">
+        <div class="col-8">
+            <div><span class="badge bg-warning title_video mt-2 mb-2"><h5>Сенсорный исполнительный и вычислительный уровни</h5></span></div>
+            <iframe width="720" height="480" src="https://www.youtube.com/embed/pmsOxNKjxFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-4">
+            
+            <img class="img_insert" src="{{ url_for('static',filename='images/arduino.png') }}">
             <div class="design_info">This picture and website design was made by a neural network</div>
+            <div class="design_info">Эту картинку и дизайн сайта придумала нейросеть</div>
+            
         </div>
     </div>
 </div>
