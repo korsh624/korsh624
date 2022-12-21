@@ -1,10 +1,11 @@
 body{
     background: linear-gradient(to top right,#1c1720, #184d48);
+    position: relative;
 
 }
 h1 {
     border: 2px #eee solid;
-    color: brown;
+    color: #e4ac13;
     text-align: center;
     padding: 10px;
 }
@@ -13,4 +14,16 @@ footer{
     height: 100px;
     background-color: indigo;
     width: 100%;
+}
+.design_info{
+    color: #e4ac13;
+    font-family: roboto;
+    font-size: 15px;
+    font-weight: bold;
+}
+.btn.btn-primary.btn_design{
+    background: #f0ef3d;
+    color: #162a2b;
+    font-size: 15px;
+    font-weight: bold;
 }

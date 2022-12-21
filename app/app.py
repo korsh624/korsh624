@@ -13,24 +13,24 @@ def home():
     data=readTable()
     return render_template('index.html')
 
-@app.route("/users")
-def user():
+@app.route("/arduino")
+def arduino():
     data=readTable()
     counter=len(data)
-    return render_template('users.html',data=data, counter=counter)
+    return render_template('arduino.html',data=data, counter=counter)
 
 
-@app.route("/teams")
-def team():
+@app.route("/opencv")
+def opencv():
     data=readTable()
     counter=len(data)
-    return render_template('teams.html',data=data, counter=counter)
+    return render_template('opencv.html',data=data, counter=counter)
 
-@app.route("/naminations")
-def namination():
+@app.route("/ros")
+def ros():
     data=readTable()
     counter=len(data)
-    return render_template('naminations.html',data=data, counter=counter)
+    return render_template('ros.html',data=data, counter=counter)
 
 @app.route("/allinfo")
 def allinfo():
@@ -38,11 +38,11 @@ def allinfo():
     counter=len(data)
     return render_template('allinfo.html',data=data, counter=counter)
 
-@app.route("/about")
-def about():
+@app.route("/python")
+def python():
     data=readTable()
     counter=len(data)
-    return render_template('about.html',data=data, counter=counter)
+    return render_template('python.html',data=data, counter=counter)
 
 if __name__=="__main__":
     app.run(debug=True)
