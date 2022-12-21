@@ -1,0 +1,56 @@
+{% extends 'index.html' %}
+{% block title %}
+О соревнованиях
+{% endblock %}
+{% block body %}
+<div class="container mt-5">
+    <!-- {{data}} 
+    {{counter}}  -->
+    {% for el in  range (counter)%}
+        <div class="alert alert-info">
+      		        <span>
+            <p class="lead">Соревнования состоятся по номинациям:</p>
+<p class="lead"><b>18.01.2022 - Hello, Robot! Lego</b> - соревнования для обучающихся 2-6 классов на базе образовательных конструкторов LEGO Mindstorms и LEGO Spike.</p>
+<ul class="lead">
+<li><a href="https://www.russianrobotics.ru/upload/iblock/3cd/3cdeb86727a4c5ffa895f46ced3ba44b.pdf">РобоИсполнитель</a> - соревнования для обучающихся 2-4 классов;</li> 
+<li><a href="https://www.russianrobotics.ru/upload/iblock/090/0906dc9cf8a7045f144142ae233cf5c2.pdf">РобоКвест</a> - соревнования для обучающихся 5-6 классов;</li> 
+</ul>
+<p class="lead">Дополнительные материалы:</p>
+<ul class="lead">
+<li><a href="https://www.russianrobotics.ru/upload/iblock/bc5/bc5b03d0c24ecfa3266fa3baf358fa8c.pdf">Общие положения соревнований "Hello, Robot! Lego"</a></li>
+<li><a href="https://www.russianrobotics.ru/upload/iblock/827/8272714cf79f1ec6ddb6ec33d78ee636.pdf">Макет поля РобоИсполнитель</a></li>
+<li><a href="https://www.russianrobotics.ru/upload/iblock/b3f/b3f6c4809b07c62e61b3910c35228e3b.pdf">Макет поля РобоКвест</a></li>
+</ul>
+<p class="lead"><b>19.01.2022 - Hello, Robot! Open</b> - соревнования для обучающихся 3-7 классов на базе любых образовательных конструкторов, кроме LEGO.</p>
+<ul class="lead">
+<li><a href="https://www.russianrobotics.ru/upload/iblock/4d7/4d7a1fc36b5852728601d06c408568cc.pdf">РобоКурьер</a> - соревнования для обучающихся 3-5 классов;</li> 
+<li><a href="https://www.russianrobotics.ru/upload/iblock/388/388614d6388fc9c66e11c868f5cf26b6.pdf">РобоПеревозчик</a> - соревнования для обучающихся 6-7 классов;</li> 
+</ul>
+<p class="lead">Дополнительные материалы:</p>
+<ul class="lead">
+<li><a href="https://www.russianrobotics.ru/upload/iblock/31d/31d442e9eac4a93dc9bd756e6cf8e2f3.pdf">Общие положения соревнований "Hello, Robot! Open"</a></li>
+<li><a href="https://www.russianrobotics.ru/upload/iblock/439/439b4d958b75a1d31037f2e900fc3861.pdf">Макет поля РобоКурьер</a></li>
+<li><a href="https://www.russianrobotics.ru/upload/iblock/7ba/7ba016608367fc296e9195bf4e684e2f.pdf">Макет поля РобоПеревозчик</a></li>
+</ul>
+<p><b>20.01.2022 - Региональный этап Олимпиады школьников "Робофест"</b> - практикоориентированная олимпиада по физике для обучающихся 7-11 классов и студентов СПО, включающая теоретическую и практическую часть.</p>
+<p> Теоретический тур  отборочного и финального этапа является индивидуальным конкурсом школьников по общеобразовательному предмету олимпиады - физике. На региональном этапе будет проводиться на образовательной платформе sdo.robofest.ru по потокам. На финальном этапе будет проводиться в очном (дистанционном при неблагоприятной эпидобстановке) формате в ФГБОУ ВО МГУ им М.В. Ломоносова. Участники выполняют задания по физике в форме письменной работы. Примеры заданий и ссылки на материалы для подготовки доступны на <a href="https://www.robofest.ru/olimpiada/teor_tur/">официальном сайте олимпиады</a>.</p>
+<p>Практический тур олимпиады - соревнования "Робокарусель". Для участия в соревнованиях команде необходимо подготовить трех роботов для выполнения трех различных заданий:</p>
+<ul>
+<li><a href="https://www.robofest.ru/olimpiada/prakticheskiy-tur/%D0%A0%D0%9A_%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_1_%D0%A0%D0%BE%D0%B1%D0%BE%D0%91%D0%BE%D0%B9_2022%20v1.pdf">Робобой</a></li> 
+<li><a href="https://www.robofest.ru/olimpiada/prakticheskiy-tur/%D0%A0%D0%9A_%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_2_%D0%A0%D0%BE%D0%B1%D0%BE%D0%94%D0%BE%D0%BC%D0%92%D0%B2%D0%B5%D1%80%D1%85%D0%94%D0%BD%D0%BE%D0%BC_2022%20v1.pdf">РобоДомВверхДном</a></li> 
+<li><a href="https://www.robofest.ru/olimpiada/prakticheskiy-tur/%D0%A0%D0%9A_%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_3_%D0%A0%D0%BE%D0%B1%D0%BE%D0%A8%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%8B_2022%20v1.pdf">РобоШахматы</a></li> 
+</ul>
+<p class="lead">Дополнительные материалы:</p>
+<ul class="lead">
+<li><a href="https://www.robofest.ru/olimpiada/prakticheskiy-tur/%D0%A0%D0%9A_%D0%9E%D0%B1%D1%89%D0%B8%D0%B5_%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F_2022%20v1.pdf">Регламент РобоКарусель 2021/2022</a></li>
+<li><a href="https://www.robofest.ru/olimpiada/prakticheskiy-tur/2022_%D0%A0%D0%9A_%D0%A0%D0%BE%D0%B1%D0%BE%D0%91%D0%BE%D0%B9_1000_2100_2.pdf">Макет поля Робобой 2022</a></li>
+<li><a href="https://www.robofest.ru/olimpiada/prakticheskiy-tur/2022_%D0%A0%D0%9A_%D0%A0%D0%BE%D0%B1%D0%BE%D0%94%D0%BE%D0%BC%D0%92%D0%B2%D0%B5%D1%80%D1%85%D0%94%D0%BD%D0%BE%D0%BC_1000_2000.pdf">Макет поля РобоДомВверхДном 2022</a></li>
+<li><a href="https://www.robofest.ru/olimpiada/prakticheskiy-tur/2022_%D0%A0%D0%9A_%D0%A0%D0%BE%D0%B1%D0%BE%D0%A8%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%8B_1000_2000_2.pdf">Макет поля РобоШахматы 2022</a></li>
+</ul>
+        </span>
+        </div>
+    {% endfor %}
+   
+    
+</div>
+{% endblock %}

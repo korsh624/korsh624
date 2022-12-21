@@ -1,0 +1,16 @@
+body{
+    background: linear-gradient(to top right,#1c1720, #184d48);
+
+}
+h1 {
+    border: 2px #eee solid;
+    color: brown;
+    text-align: center;
+    padding: 10px;
+}
+footer{
+    display: block;
+    height: 100px;
+    background-color: indigo;
+    width: 100%;
+}

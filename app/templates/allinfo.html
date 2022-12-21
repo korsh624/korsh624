@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+{% block title %}
+Участники соревнований
+{% endblock %}
+{% block body %}
+<div class="container mt-5">
+    <!-- {{data}} 
+    {{counter}} -->
+    {% for el in  range (counter)%}
+        <div class="alert alert-info">
+            <h7 style="font-weight: bold">Участник </h7>
+            <h7> № "{% print(data[el][6])  %}"</h7>
+            <h2>{% print(data[el][1])  %} {% print(data[el][2])  %}</h2>
+            <!-- <h7> Команда "{% print(data[el][4])  %}"</h7> -->
+            <h7 style="font-weight: bold"> Возраст "</h7><h7>{% print(data[el][3])  %}"</h7>
+            <h7 style="font-weight: bold"> Телефон "</h7><h7>{% print(data[el][0])  %}"</h7>
+            <h7 style="font-weight: bold"> Команда "</h7><h7>{% print(data[el][4])  %}"</h7>
+            <h7 style="font-weight: bold"> Номинация "</h7><h7>{% print(data[el][5])  %}"</h7>
+        </div>
+    {% endfor %}
+   
+    
+</div>
+{% endblock %}
